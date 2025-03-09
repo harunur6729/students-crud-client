@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomeLayouts from "../Layouts/HomeLayouts";
 import AddStudentForm from "../components/AddStudentForm";
+import AllStudents from "../components/AllStudents";
 
 const router = createBrowserRouter ([
     {
@@ -10,6 +11,11 @@ const router = createBrowserRouter ([
            {
             path:"/studentForm",
             element:<AddStudentForm></AddStudentForm>
+           },
+           {
+            path:"/allStudents",
+            element:<AllStudents></AllStudents>,
+            loader:()=> fetch("http://localhost:5000/students")
            }
 
         ]

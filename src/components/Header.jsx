@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
 
-    const links = [
-        <Link><li>Home</li></Link>,
-        <Link to="/studentForm"><li>Add Students</li></Link>,
-        <Link><li>All Students</li></Link>
-    ];
+  const links = [
+    <Link key="home" to="/"><li>Home</li></Link>,
+    <Link key="add-student" to="/studentForm"><li>Add Students</li></Link>,
+    <Link key="all-students" to="/allStudents"><li>All Students</li></Link>
+];
+
     return (
         <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
