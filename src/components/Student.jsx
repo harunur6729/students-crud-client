@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Student = ({ student, students, setStudents }) => {
   const handleDelete = _id =>{
@@ -31,6 +32,8 @@ const Student = ({ student, students, setStudents }) => {
         <td className="p-2 border border-gray-300 ">{student.father}</td>
         <td className="p-2 border border-gray-300 ">{student.mother}</td>
         <td className="p-2 border border-gray-300 "> {student.image}</td>
+       
+        <td><Link to={`/update/${student._id}`}><button  className="btn btn-secondary m-1">Update</button></Link></td>
         <td><button onClick={()=>handleDelete(student._id)} className="btn btn-accent m-1">Delete</button></td>
       </tr>
     

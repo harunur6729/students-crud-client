@@ -45,11 +45,33 @@ const AddStudentForm = () => {
                 <h2 className="text-xl font-bold text-center mb-4 text-gray-700">শিক্ষার্থী নিবন্ধন</h2>
 
                 <div className="grid grid-cols-1 gap-3">
-                    <input className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" name="name" placeholder="শিক্ষার্থীর নাম" />
-                    <input className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" name="className" placeholder="শ্রেণি" />
-                    <input className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" name="roll" placeholder="রোল নম্বর" />
-                    <input className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" name="father" placeholder="পিতার নাম" />
-                    <input className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" name="mother" placeholder="মাতার নাম" />
+                    <div className="grid grid-cols-1">
+                        <p className="text-black ">শিক্ষার্থীর নাম:</p>
+                        <input className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700" type="text" name="name" placeholder="শিক্ষার্থীর নাম" />
+                    </div>
+
+
+                   <div className="grid grid-cols-1">
+                    <p className="text-black "> শ্রেণি:</p>
+                    <input className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700" type="text" name="className" placeholder="শ্রেণি" />
+                   </div>
+
+
+                  <div>
+                    <p className="text-black"> রোল নম্বর:</p>
+                    <input className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700" type="number" name="roll" placeholder="রোল নম্বর" />
+                  </div>
+
+                 <div className="grid grid-cols-1">
+                    <p className="text-black"> পিতার নাম:</p>
+                    <input className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700" type="text" name="father" placeholder="পিতার নাম" />
+                 </div>
+
+
+                    <div className="grid grid-cols-1">
+                        <p className="text-black">মাতার নাম:</p>
+                        <input className="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700" type="text" name="mother" placeholder="মাতার নাম" />
+                    </div>
                     
                     {/* ছবি আপলোড */}
                     <input className="w-full p-3 border rounded bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" type="file" name="image" accept="image/*" />
